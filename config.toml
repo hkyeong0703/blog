@@ -14,7 +14,7 @@ pygmentsCodefencesGuessSyntax = true
 title = "hkyeong's blog"
 author = "HyeonKyeong Kim"
 description = "#developer #devops #backend"
-profilePicture = "/images/profile.jpeg"
+profilePicture = "images/profile.jpeg"
 copyright = "2020-2021"
 CommentoURL = "https://commento.example.com/js/commento.js"
 
