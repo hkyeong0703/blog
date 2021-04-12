@@ -1,6 +1,7 @@
 [parmas]
 languageCode = "en-us"
 title = "hkyeong's blog"
+author = "HyeonKyeong Kim"
 desciption = """
 tech blog
 """
