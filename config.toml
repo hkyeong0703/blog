@@ -20,5 +20,5 @@ copyright = "2020-2021"
   name = "Posts"
   weight = 200
   identifier = "posts"
-  url = "/post/"
+  url = "/posts/"
 
