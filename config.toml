@@ -1,0 +1,25 @@
+[parmas]
+baseURL = "https://hkyeong0703.github.io/"
+languageCode = "en-us"
+title = "hkyeong's blog"
+desciption = """
+tech blog
+"""
+theme = "anatole"
+profilePicture = "images/profile.jpg"
+copyright = "2020-2021"
+
+[menu]
+
+  [[menu.main]]
+  name = "Home"
+  identifier = "home"
+  weight = 100
+  url = "/"
+
+  [[menu.main]]
+  name = "Posts"
+  weight = 200
+  identifier = "posts"
+  url = "/post/"
+
