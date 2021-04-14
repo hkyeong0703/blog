@@ -55,7 +55,7 @@ DisableComments: false
   - A.co.kr, B.co.kr 모두 AWS에서 route53에서 co.kr에대한 도메인이 구매가 불가능하여, 다른 곳에서 구매한 도메인임.
   - A.co.kr의 DNS에는 MX Record가 세팅되어 사용 중임.
   - B.co.kr의 DNS에는 CNAME Record에  AWS ELB DNS name이 세팅되어 사용 중임.  
-    ![dns_cname_mx_Record_route_list](https://hkyeong0703.github.io/posts/images/dns_cname_mx_Record_route_list.png)
+    ![dns_cname_mx_Record_route_list](https://hkyeong0703.github.io/posts/images/dns_cname_mx_record_route_list.png)
 
 - **하고자 했던 것**
   
@@ -142,7 +142,7 @@ A.co.kr에 MX Record로 등록된 메일 서버를 계속 이용해야했기에 
 
 
 
-Route53에 Record를 옮기는 과정에서 MX Record를 등록한 상태에서 CNAME Record를 등록해보았더니 아래 사진과 같은 에러가 노출되고 등록이 불가했다... ![dns_cname_mx_Record_error](https://hkyeong0703.github.io/posts/images/dns_cname_mx_Record_error.png)  
+Route53에 Record를 옮기는 과정에서 MX Record를 등록한 상태에서 CNAME Record를 등록해보았더니 아래 사진과 같은 에러가 노출되고 등록이 불가했다... ![dns_cname_mx_Record_error](https://hkyeong0703.github.io/posts/images/dns_cname_mx_record_error.png)  
 
 모든 서비스에서 등록이 불가하도록 처리가되었다면 삽질을 안했어도 됐을텐데...  
 앞으로 이 기회를 통해 CNAME Record 사용을 최대한 자제할 것 같다.
