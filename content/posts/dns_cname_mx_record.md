@@ -138,12 +138,12 @@ A.co.kr에 MX 레코드로 등록된 메일 서버를 계속 이용해야했기�
 
 이제 해결 방안을 찾아보았다. 3가지정도가 있었다.
 
-1. 네임 서버를 옮겨 AWS Route53 Hosted Zones을 이용하여 AWS ELB를 A레코드 alias로 등록
+1. 네임 서버를 옮겨 AWS Route53 Hosted Zones을 이용하여 AWS ELB를 A레코드 alias로 등록  
    참고: [Creating a public hosted zone](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/CreatingHostedZone.html)
    [Making Route 53 the DNS service for a domain that's in use](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/migrate-dns-domain-in-use.html)
-2. AWS ELB에 NLB를 사용하여 고정 ip를 부여하여 A 레코드로 등록
+2. AWS ELB에 NLB를 사용하여 고정 ip를 부여하여 A 레코드로 등록  
    참고: [Create a Network Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/create-network-load-balancer.html)
-3. AWS global accelerator 사용
+3. AWS global accelerator 사용  
    참고: [AWS Global Accelerator](https://aws.amazon.com/ko/blogs/korea/new-aws-global-accelerator-for-availability-and-performance/)
 
 주로 AWS를 사용하고있기에 앞으로 유지보수를 위해 1번을 택해 해결하였다.
