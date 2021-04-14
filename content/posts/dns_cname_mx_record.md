@@ -20,11 +20,11 @@ DisableComments: false
 
 최소한 아래 5가지에대한 개념은 알고 있어야하기에 간단히 짚고 넘어가보자.
 
-1. **Domain 란?**
+1. **Domain 란?**  
    인터넷에 연결되어있는 장치(컴퓨터, 서버, 스마트폰 등)를 식별할 수 있는 주소인 ip를 사람이 이해하고 기억하기 어렵기때문에 ip에 이름을 부여하여 쉽게 사용할 수 있도록하였는데 이때 부여한 이름이 도메인이다.
    e.g) google.co.kr, naver.com
 
-2. **DNS 란?**
+2. **DNS 란?**  
    Domain Name System으로 전화번호부라고 생각하면된다. 도메인과 ip의 쌍(pair)을 가지고있어 서로 변환하는 역할을 한다.
 
    도메인-ip에 대한 쌍을 하나의 레코드(Record)라 한다.
@@ -32,13 +32,13 @@ DisableComments: false
    - Forward Zone (도메인 -> ip)
    - Reverse Zone (ip -> 도메인)
 
-3. **CNAME record?**
+3. **CNAME record?**  
    Canonical Name의 약자로 도메인을 또 다른 도메인 주소로 매핑 시키는 형태이다.
 
-4. **MX record?**
+4. **MX record?**  
    Mail Exchanger Record로 메일이 수신될 위치를 결정하는 레코드다. MX 레코드에는 우선순위와 도메인을 설정할 수 있다.
 
-5. **nslookup?**
+5. **nslookup?**  
 
    네트워크 관리 명령 줄 인터페이스 도구로서 많은 컴퓨터 운영 체제에서 사용 가능하며, 도메인 네임을 얻거나 IP 주소 매핑 또는 다른 특정한 DNS 레코드를 도메인 네임 시스템에 질의할 때 사용한다.
 
@@ -78,8 +78,6 @@ DisableComments: false
 - **벌어진 상황**
 
   - A.co.kr 메일 계정으로 보낸 일부 메일이 B.co.kr의 메일 계정으로 발송됨.
-
-    
 
 문제 상황을 파악하기위해 nslookup을 이용해 확인을 해보았다.
 
@@ -152,9 +150,12 @@ A.co.kr에 MX 레코드로 등록된 메일 서버를 계속 이용해야했기�
 
 
 
-Route53에 레코드를 옮기는 과정에서 MX 레코드를 등록한 상태에서 CNAME 레코드를 등록해보았더니 아래 사진과 같은 에러가 노출되고 등록이 불가했다... ![dns_cname_mx_record_error](https://hkyeong0703.github.io/posts/images/dns_cname_mx_record_error.png)
-
-
+Route53에 레코드를 옮기는 과정에서 MX 레코드를 등록한 상태에서 CNAME 레코드를 등록해보았더니 아래 사진과 같은 에러가 노출되고 등록이 불가했다... ![dns_cname_mx_record_error](https://hkyeong0703.github.io/posts/images/dns_cname_mx_record_error.png)  
 
 모든 서비스에서 등록이 불가하도록 처리가되었다면 삽질을 안했어도 됐을텐데...  
 앞으로 이 기회를 통해 CNAME 레코드 사용을 최대한 자제할 것 같다.
+
+
+
+
+
