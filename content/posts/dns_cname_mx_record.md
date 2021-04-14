@@ -113,7 +113,7 @@ A.co.kr mail exchanger = 5 mail2.example.com
   - DNS 네임스페이스의 최상위 노드에 대한 CNAME 레코드를 생성할 수 없다.
   - 하위 도메인에 대한 CNAME 레코드를 생성하면, 그 하위 도메인에 대해서는 다른 레코드를 생성할 수 없다.
   - 참고
-    - [CNAME 레코드 형식](https://docs.aws.amazon.com/ko_kr/Route53/latest/DeveloperGuide/ResourceRecordTypes.html#CNAMEFormat)
+    - [CNAME 레코드 형식](https://docs.aws.amazon.com/ko_kr/Route53/latest/DeveloperGuide/ResourceRecordTypes.html#CNAMEFormat
     - [RFC 2181, Clarifications to the DNS ](https://tools.ietf.org/html/rfc2181)Specification, section 10.1
 
 - CNAME 레코드와 MX 레코드를 같이 사용했을 때의 문제점 
