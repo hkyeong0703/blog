@@ -152,7 +152,7 @@ A.co.kr에 MX 레코드로 등록된 메일 서버를 계속 이용해야했기�
 
 
 
-Route53에 레코드를 옮기는 과정에서 MX 레코드를 등록한 상태에서 CNAME 레코드를 등록해보았더니 아래 사진과 같은 에러가 노출되고 등록이 불가했다... ![dns_cname_mx_record_error](/images/posts/dns_cname_mx_record_error.png)
+Route53에 레코드를 옮기는 과정에서 MX 레코드를 등록한 상태에서 CNAME 레코드를 등록해보았더니 아래 사진과 같은 에러가 노출되고 등록이 불가했다... ![dns_cname_mx_record_error](/images/dns_cname_mx_record_error.png)
 
 
 
