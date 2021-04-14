@@ -1,5 +1,5 @@
 ---
-title: "Dns_cname_mx_record"
+title: "Domain에 CNAME, MX record를 같이 등록하면서 겪은 이슈"
 date: 2021-04-14T18:15:10+09:00
 Description: ""
 Tags: [
@@ -8,13 +8,13 @@ Tags: [
 	"mx",
 	"domain",
 	"rfc974",
-	"rfc2181"
+	"rfc2181",
+	"도메인"
 ]
 Categories: []
 DisableComments: false
+  
 ---
-
-## Domain에 CNAME, MX record를 같이 등록하면서 겪은 이슈
 
 기존에 사용하고 있던 도메인에 레코드를 추가하면서 겪었던 이슈에 대해 기록해보려고한다.
 
@@ -47,27 +47,30 @@ DisableComments: false
 ------
 
 
+
 이제 본론으로 들어가서 문제를 겪었던 상황을 A.co.kr, B.co.kr 도메인으로 예로들어 적어보려한다.
 
 - 주어진 상황
-  
+
   - A.co.kr, B.co.kr 모두 AWS에서 route53에서 co.kr에대한 도메인이 구매가 불가능하여, 다른 곳에서 구매한 도메인임.
-  
+
   - A.co.kr의 DNS에는 MX record가 세팅되어 사용 중임.
-  
+
   - B.co.kr의 DNS에는 CNAME record에  AWS ELB DNS name이 세팅되어 사용 중임.
-  
+
     | Record name | type | Value                                                        |
     | ----------- | ---- | ------------------------------------------------------------ |
     | A.co.kr     | MX   | 1 mail.example.com<br />5 mail2.example.com<br />10 mail3.example.com |
-  
+
     | Record name | type  | Value                                                        |
     | ----------- | ----- | ------------------------------------------------------------ |
     | B.co.kr     | CNAME | xxx.elb.amazoneaws.com                                       |
     | B.co.kr     | MX    | 1 mail9.example.com<br />5 mail8.example.com<br />10 mail7.example.com |
-- 하고자 했던 것
-  - A.co.kr로 접속시 B.co.kr로 접속 했을 때와 동일한 페이지로 연결되도록하고 싶었음.
 
+- 하고자 했던 것
+  
+- A.co.kr로 접속시 B.co.kr로 접속 했을 때와 동일한 페이지로 연결되도록하고 싶었음.
+  
 - 적용했던 방법
 
   - A.co.kr DNS에 CNAME 레코드로 B.co.kr 등록
@@ -127,9 +130,11 @@ A.co.kr mail exchanger = 5 mail2.example.com
 
 A.co.kr에 MX 레코드로 등록된 메일 서버를 계속 이용해야했기에 CNAME 레코드를 사용할 수 없는 것이었다...😭
 
-
+<br />
 
 ------
+
+
 
 이제 해결 방안을 찾아보았다. 3가지정도가 있었다.
 
@@ -145,7 +150,11 @@ A.co.kr에 MX 레코드로 등록된 메일 서버를 계속 이용해야했기�
 
 
 
-Route53에 레코드를 옮기는 과정에서 MX 레코드를 등록한 상태에서 CNAME 레코드를 등록해보았더니 아래 사진과 같은 에러가 노출되고 등록이 불가했다... ![스크린샷 2021-04-14 21.26.35](/Users/hkyeong/Desktop/스크린샷 2021-04-14 21.26.35.png)
 
-모든 서비스에서 등록이 불가하도록 처리가되었다면 삽질을 안했어도 됐을텐데...
+
+Route53에 레코드를 옮기는 과정에서 MX 레코드를 등록한 상태에서 CNAME 레코드를 등록해보았더니 아래 사진과 같은 에러가 노출되고 등록이 불가했다... ![dns_cname_mx_record_error](/images/posts/dns_cname_mx_record_error.png)
+
+
+
+모든 서비스에서 등록이 불가하도록 처리가되었다면 삽질을 안했어도 됐을텐데...  
 앞으로 이 기회를 통해 CNAME 레코드 사용을 최대한 자제할 것 같다.
