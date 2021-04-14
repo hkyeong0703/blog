@@ -55,7 +55,7 @@ DisableComments: false
   - A.co.kr, B.co.kr 모두 AWS에서 route53에서 co.kr에대한 도메인이 구매가 불가능하여, 다른 곳에서 구매한 도메인임.
   - A.co.kr의 DNS에는 MX record가 세팅되어 사용 중임.
   - B.co.kr의 DNS에는 CNAME record에  AWS ELB DNS name이 세팅되어 사용 중임.  
-    ![dns_cname_mx_record_route_list](https://hkyeong0703.github.io/posts/images/dns_cname_mx_record_route_list.png)
+    ![dns_cname_mx_record_route_list](https://hkyeong0703.github.io/posts/images/dns_cname_mx_record_route_list.png){:width="100" height="100"}
 
 - **하고자 했던 것**
   
