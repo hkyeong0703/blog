@@ -121,7 +121,7 @@ A.co.kr mail exchanger = 5 mail2.example.com
   - RFC 문서에 MX 레코드와 CNAME 연동에대해 주의 또는 제한을 둔 글이 없기때문에 명확하게 안 된다고 말할 수 없지만, 불필요한 쿼리들이 발생되는 트래픽을 사유로 오랜 기간 잘못된 사용으로 인식되어 왔고, 대부분 관련 문서에서 사용하지말기를 권고하고있음.
 
     - 참고
-      - http://wiki.kldp.org/KoreanDoc/html/PoweredByDNS-KLDP/mx-and-cname.htmlhttps://docs.aws.amazon.com/ko_kr/Route53/latest/DeveloperGuide/ResourceRecordTypes.html#MXFormat
+      - [Powered by DNS 6.3 MX와 CNAME 연동](http://wiki.kldp.org/KoreanDoc/html/PoweredByDNS-KLDP/mx-and-cname.html)
       - [rfc974](https://tools.ietf.org/html/rfc974)
 
   - [RFC 2181, Clarifications to the DNS ](https://tools.ietf.org/html/rfc2181)Specification, section 10.3
