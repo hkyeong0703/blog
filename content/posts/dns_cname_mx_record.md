@@ -1,8 +1,8 @@
 ---
 title: "Domain에 CNAME, MX Record를 같이 등록하면서 겪은 이슈"
 date: 2021-04-14T18:15:10+09:00
-Description: ""
-Tags: [
+description: ""
+tags: [
 	"dns",
 	"cname",
 	"mx",
@@ -11,8 +11,8 @@ Tags: [
 	"rfc2181",
 	"도메인"
 ]
-Categories: []
-DisableComments: false
+categories: []
+disableComments: false
   
 ---
 
