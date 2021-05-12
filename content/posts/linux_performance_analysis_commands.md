@@ -1,7 +1,7 @@
 ---
 title: "리눅스 성능을 분석할 수 있는 명령어"
 date: 2021-05-12T19:52:09+09:00
-draft: true
+description: ""
 tags: [
 	"linux",
 	"uptime",
