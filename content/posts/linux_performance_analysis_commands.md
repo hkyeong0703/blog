@@ -449,3 +449,17 @@ KiB Swap -        0 total,        0 used,        0 free.   554208 cached Mem
 
 이 기록을 바탕으로 실제로 더 사용해보고, 값들을 비교해보면서 상황에 맞게 바로바로 사용할 수 있는 정도로 몸에 익히는 일이 남았다.
 
+<br/>
+
+------
+
+<br/>
+
+**reference**
+
+https://netflixtechblog.com/linux-performance-analysis-in-60-000-milliseconds-accc10403c55
+https://ironmask84.tistory.com/355
+https://brunch.co.kr/@dreaminz/2
+https://waspro.tistory.com/155
+https://blueyikim.tistory.com/555
+
