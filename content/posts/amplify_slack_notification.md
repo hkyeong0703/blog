@@ -24,5 +24,21 @@ AWS Amplify Console에서 배포시 슬랙으로 알림을 받아보는 방법�
 ## email notification 생성
 
 1. [Amplify 콘솔을](https://console.aws.amazon.com/amplify/) 연다.
-2. 이메일 알림을 설정할 앱을 선택합니다.
-3. 
+2.  Email 알림을 설정할 앱을 선택합니다.
+3. App settings > Notifications > Manage notifications 을 클릭한다.
+   ![notification](https://hkyeong0703.github.io/posts/images/2021-06-23-1.png)
+4.  알림을 받을 Email을 입력하고, 배포 알림을 받을 대상 브랜치를 선택 후 Save한다.
+   ![notification email](https://hkyeong0703.github.io/posts/images/2021-06-23-2.png)
+5. Notifications 페이지로 돌아오면, **"We Sent you an email to confirm subscriptions, please click on the link in the email to start receiving notifications."** 라는 문구가 뜰 것이다. 4번 과정에서 입력한 Email에 메일 1통이 전송되었을 것이다.
+   ![notification](https://hkyeong0703.github.io/posts/images/2021-06-23-3.png)
+6.  Confirm subscription을 클릭한다. Email 인증 과정이라고 생각하면 된다.
+   ![notification](https://hkyeong0703.github.io/posts/images/2021-06-23-4.png)
+7. 그럼 아래와 같은 팝업창이 뜬다.
+   ![notification](https://hkyeong0703.github.io/posts/images/2021-06-23-5.png) 
+8. 
+   ![notification](https://hkyeong0703.github.io/posts/images/2021-06-23-7.png)
+9.  
+10.  
+11.   
+12. 
+
