@@ -75,7 +75,7 @@ Amplify SNS Topic Subscription에 추가 할 Lamdba function을 만들어보자.
   - {Amplify App Name}: Amplify App Name 또는 배포되는 앱이 어떤 것인지 쉽게 알아볼 수 있도록 이름을 넣어준다.
   - {slack webhook link}: 알림을 받아 볼 슬랙 채널 WEBHOOk 링크를 넣어준다.
 
-```js
+```javascript
 const https = require('https');
 
 exports.handler = async (event) => {
@@ -150,6 +150,7 @@ exports.handler = async (event) => {
 		request.end();
 	});
 };
+
 ```
 
 
