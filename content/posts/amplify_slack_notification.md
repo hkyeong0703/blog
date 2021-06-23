@@ -56,7 +56,7 @@ AWS Amplify Console에서 배포시 슬랙으로 알림을 받아보는 방법�
 
 11. AWS lamdba를 이용하여 Slack webhook을 이용할 것이다.
 
-    Protocol로 AWS Lambda를 선택하고, Endpoint로 slack으로 Notification을 보내는 lambda function을 선택한다. ([lambda function은 아래를 참고하여 생성하자.](#slack-notification-lambda-function))
+    Protocol로 AWS Lambda를 선택하고, Endpoint로 slack으로 Notification을 보내는 lambda function을 선택한다. (아래 내용 참고: [Slack notification Lambda Function](#slack-notification-lambda-function))
 
     ![notification](https://hkyeong0703.github.io/posts/images/2021-06-23-9.png) 
 
@@ -73,7 +73,7 @@ Amplify SNS Topic Subscription에 추가 할 Lamdba function을 만들어보자.
 - 수정이 필요한 값
   - {Amplify App id}: Amplify App id를 입력해 준다.
   - {Amplify App Name}: Amplify App Name 또는 배포되는 앱이 어떤 것인지 쉽게 알아볼 수 있도록 이름을 넣어준다.
-  - {slack webhook link}: 알림을 받아 볼 슬랙 채널 WEBHOOk 링크를 넣어준다.
+  - {slack webhook link}: 알림을 받아 볼 슬랙 채널 WEBHOOK 링크를 넣어준다.
 
 ```javascript
 const https = require('https');
