@@ -37,10 +37,10 @@ AWS Amplify Console에서 배포시 슬랙으로 알림을 받아보는 방법�
    ![notification](https://hkyeong0703.github.io/posts/images/2021-06-23-3.png)
 
 6.  Confirm subscription을 클릭한다. Email 인증 과정이라고 생각하면 된다.
-   ![notification](https://hkyeong0703.github.io/posts/images/2021-06-23-4.png)
+   ![notification](https://hkyeong0703.github.io/posts/images/2021-06-23-41.png)
 
 7. 그럼 아래와 같은 팝업창이 뜬다.
-   ![notification](https://hkyeong0703.github.io/posts/images/2021-06-23-5.png) 
+   ![notification](https://hkyeong0703.github.io/posts/images/2021-06-23-51.png) 
 
 8. 다시 Amplify Console Notifications 창으로 돌아오면 Status가 Confirm으로 바뀐 것을 확인 할 수 있을 것이다. 
    ![notification](https://hkyeong0703.github.io/posts/images/2021-06-23-7.png)
