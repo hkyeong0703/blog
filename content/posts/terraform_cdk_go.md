@@ -286,7 +286,7 @@ Summary: 1 destroyed.
 
 AWS console EC2 대시보드에서도 Terminated된 것을 확인하실수 있습니다.
 
-![aws ec2 dashboard](https://hkyeong0703.github.io/posts/images/go-demo-ec2-destroted.png)
+![aws ec2 dashboard](https://hkyeong0703.github.io/posts/images/go-demo-ec2-destoryed.png)
 
 
 
