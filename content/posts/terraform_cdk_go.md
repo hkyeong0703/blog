@@ -19,8 +19,6 @@ disableComments: false
 
 우선 Terraform과 CDK가 무엇인지부터 간단하게 알아보겠습니다.
 
-
-
 ## Terraform이란?
 
 HashiCorp사가 만든 오픈 소스 "코드형 인프라(IaC)" 툴 입니다. 인프라를 안전하고 효율적으로 구축, 변경 및 버전화 할 수 있습니다.
@@ -210,7 +208,7 @@ import (
 func NewMyStack(scope constructs.Construct, id string) cdktf.TerraformStack {
 	stack := cdktf.NewTerraformStack(scope, &id)
 
-	// AWS provider 구
+	// AWS provider 구성
 	aws.NewAwsProvider(stack, jsii.String("aws"), &aws.AwsProviderConfig{
 		Region: jsii.String("ap-northeast-2"),
 	})
@@ -224,7 +222,7 @@ func NewMyStack(scope constructs.Construct, id string) cdktf.TerraformStack {
 		},
 	})
 
-	// 결과로 생성된 인스턴스으 public ip를 반환
+	// 결과로 생성된 인스턴스의 public ip를 반환
 	cdktf.NewTerraformOutput(stack, jsii.String("public_ip"), &cdktf.TerraformOutputConfig{
 		Value: instance.PublicIp(),
 	})
@@ -245,7 +243,8 @@ func main() {
 
 #### 배포하기 - 인프라 프로비저닝
 
-`cdktf deploy` 를 통해 작성한 코드를 실행하여 배포합니다. 배포 작업이 완료되면 생성된 인스턴스의 public ip가 출력됩니다.
+`cdktf deploy` 를 통해 작성한 코드를 실행하여 배포합니다. 
+배포 작업이 완료되면 생성된 인스턴스의 public ip가 출력됩니다.
 
 ```shell
 $ cdktf deploy
@@ -298,4 +297,5 @@ Terraform용 CDK를 이용하여, AWS EC2를 구축하고 정리하는 작업까
 CDK를 활용하면 보다 개발자가 편한 언어를 이용하여 인프라 프로비저닝을 할 수 있다는 장점은 정말 큰 것 같습니다.
 
 하지만 Go언어를 통해 cdktf를 사용하기엔 아직은 실험적인, 베타 단계라고합니다.
-cdktf 사용하시려고 계획하시거든 Go언어보단 Typesctipt 또는 Pythond 추천 드립니다.
+
+cdktf 사용하시려고 계획하시거든 현재는 Go보단 Typesctipt 또는 Python을 추천 드립니다.
