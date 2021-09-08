@@ -128,3 +128,15 @@ EC2 Image Builder는 Cloudwatch Logs에서 파이프라인 프로세스의 모�
 
 두 가지를 조사하고 간단하게 AMI를 만들어보면서 참고할 자료의 양이 Packer가 훨씬 많았다. AWS EC2 Image Builder 경우 공식 문서 외엔 거의 참고 할 자료가 없고, 공식 문서 또한 없는 정보들이 많다.
 
+
+
+
+
+#### reference
+
+https://www.europeclouds.com/blog/building-amis-packer-and-image-builder
+
+https://docs.aws.amazon.com/ko_kr/imagebuilder/latest/userguide/what-is-image-builder.html
+
+https://www.packer.io/docs
+
