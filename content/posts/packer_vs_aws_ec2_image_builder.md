@@ -1,6 +1,6 @@
 ---
-title: "Packer vs AWS EC2 Image Builder"
-date: 2021-09-08T21:01:24+09:00
+title: "Packer_vs_aws_ec2_image_builder"
+date: 2021-09-08T20:31:02+09:00
 description: ""
 tags: [
 	"terraform",
