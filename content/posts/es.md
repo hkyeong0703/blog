@@ -41,7 +41,7 @@ disableComments: false
 
 - **노드**: 클러스터를 구성하는 하나하나의 프로세스
 
-  <img src="https://hkyeong0703.github.io/posts/images/es1.png" alt="스크린샷 2022-01-12 20.03.29" style="zoom: 67%;" />
+  <img src="https://hkyeong0703.github.io/posts/images/es1.png" alt="es cluster" style="zoom: 67%;" />
 
 
 
@@ -50,7 +50,7 @@ disableComments: false
 단일 노드로도 클러스터를 구성할 수 있지만, 단일 노드로 클러스터를 구성했을 경우 해당 노드에 장애가 발생한다면 요청 불가 상태가 된다. 
 반면에 다수개의 노드로 클러스터를 구성하게되면, 하나의 노드에 장애가 발생해도 다른 노드에서 요청을 처리 할 수 있기에 안정적으로 운영이 가능하기때문에 단일 노드의 구성은 추천하지 않는다.
 
-<img src="![es cluster](https://hkyeong0703.github.io/posts/images/es7.png)" alt="es cluster" style="zoom: 33%;" />
+<img src="https://hkyeong0703.github.io/posts/images/es7.png" alt="es cluster" style="zoom: 33%;" />
 
 
 
