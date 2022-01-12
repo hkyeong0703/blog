@@ -1,6 +1,6 @@
 ---
 title: "Elastic Search (1)"
-date: 2021-11-09T20:51:28+09:00
+date: 2022-01-12T20:51:28+09:00
 description: ""
 tags: [
 	"es",
@@ -41,7 +41,7 @@ disableComments: false
 
 - **노드**: 클러스터를 구성하는 하나하나의 프로세스
 
-  <img src="/Users/hkyeong/Library/Application Support/typora-user-images/스크린샷 2022-01-12 20.03.29.png" alt="스크린샷 2022-01-12 20.03.29" style="zoom: 67%;" />
+  <img src="https://hkyeong0703.github.io/posts/images/es1.png" alt="스크린샷 2022-01-12 20.03.29" style="zoom: 67%;" />
 
 
 
