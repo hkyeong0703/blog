@@ -1,5 +1,5 @@
 ---
-title: "Elastic Search (1)"
+title: "Elastic Search 개념 다지기"
 date: 2022-01-12T20:51:28+09:00
 description: ""
 tags: [
