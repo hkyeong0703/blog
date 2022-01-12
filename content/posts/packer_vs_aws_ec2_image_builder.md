@@ -1,5 +1,5 @@
 ---
-title: "Packer vs AWS EC2 Image Builder"
+ title: "Packer vs AWS EC2 Image Builder"
 date: 2021-09-08T20:31:02+09:00
 description: ""
 tags: [

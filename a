@@ -1,0 +1,64 @@
+{
+    "ScheduledUpdateGroupActions": [
+        {
+            "AutoScalingGroupName": "CodeDeploy_hh-prd-commerce-webview-api_d-WNW56TXWC",
+            "ScheduledActionName": "hh-commerce-webview-api-scale-out-action",
+            "ScheduledActionARN": "arn:aws:autoscaling:ap-northeast-2:230667876840:scheduledUpdateGroupAction:5d98a578-a4cf-4e5f-abe6-3aca0bc75c96:autoScalingGroupName/CodeDeploy_hh-prd-commerce-webview-api_d-WNW56TXWC:scheduledActionName/hh-commerce-webview-api-scale-out-action",
+            "Time": "2021-11-10T00:30:00+00:00",
+            "StartTime": "2021-11-10T00:30:00+00:00",
+            "EndTime": "2021-11-12T03:00:00+00:00",
+            "Recurrence": "30 9 * * 1-5",
+            "MinSize": 12,
+            "MaxSize": 16,
+            "DesiredCapacity": 12,
+            "TimeZone": "Asia/Seoul"
+        },
+        {
+            "AutoScalingGroupName": "CodeDeploy_hh-prd-commerce-webview-api_d-WNW56TXWC",
+            "ScheduledActionName": "hh-commerce-webview-api-scale-in-action",
+            "ScheduledActionARN": "arn:aws:autoscaling:ap-northeast-2:230667876840:scheduledUpdateGroupAction:e100fb70-ae14-4426-9285-91361dfcc0ad:autoScalingGroupName/CodeDeploy_hh-prd-commerce-webview-api_d-WNW56TXWC:scheduledActionName/hh-commerce-webview-api-scale-in-action",
+            "Time": "2021-11-10T02:00:00+00:00",
+            "StartTime": "2021-11-10T02:00:00+00:00",
+            "EndTime": "2021-11-12T03:00:00+00:00",
+            "Recurrence": "00 11 * * 1-5",
+            "MinSize": 6,
+            "MaxSize": 12,
+            "DesiredCapacity": 6,
+            "TimeZone": "Asia/Seoul"
+        },
+        {
+            "AutoScalingGroupName": "CodeDeploy_hh-prd-commerce-webview-api_d-WNW56TXWC",
+            "ScheduledActionName": "test",
+            "ScheduledActionARN": "arn:aws:autoscaling:ap-northeast-2:230667876840:scheduledUpdateGroupAction:c74a59a5-2759-431e-b103-ea760e07d111:autoScalingGroupName/CodeDeploy_hh-prd-commerce-webview-api_d-WNW56TXWC:scheduledActionName/test",
+            "Time": "2021-11-10T15:00:00+00:00",
+            "StartTime": "2021-11-10T15:00:00+00:00",
+            "MinSize": 6,
+            "MaxSize": 12,
+            "DesiredCapacity": 6,
+            "TimeZone": "Asia/Seoul"
+        },
+        {
+            "AutoScalingGroupName": "CodeDeploy_hh-prd-commerce-webview-api_d-WNW56TXWC",
+            "ScheduledActionName": "hkyeong-test",
+            "ScheduledActionARN": "arn:aws:autoscaling:ap-northeast-2:230667876840:scheduledUpdateGroupAction:8fff37a6-6dd6-4eb6-b5d3-39b9dc068381:autoScalingGroupName/CodeDeploy_hh-prd-commerce-webview-api_d-WNW56TXWC:scheduledActionName/hkyeong-test",
+            "Time": "2021-11-11T00:30:00+00:00",
+            "StartTime": "2021-11-11T00:30:00+00:00",
+            "MinSize": 6,
+            "MaxSize": 12,
+            "DesiredCapacity": 6
+        },
+        {
+            "AutoScalingGroupName": "CodeDeploy_hh-prd-commerce-webview-api_d-WNW56TXWC",
+            "ScheduledActionName": "scale-out-commerce-webview-api",
+            "ScheduledActionARN": "arn:aws:autoscaling:ap-northeast-2:230667876840:scheduledUpdateGroupAction:b48d482f-4593-4010-aee9-84c6955c0d32:autoScalingGroupName/CodeDeploy_hh-prd-commerce-webview-api_d-WNW56TXWC:scheduledActionName/scale-out-commerce-webview-api",
+            "Time": "2021-11-15T00:30:00+00:00",
+            "StartTime": "2021-11-15T00:30:00+00:00",
+            "EndTime": "2021-11-15T15:00:00+00:00",
+            "Recurrence": "30 9 * * Mon",
+            "MinSize": 12,
+            "MaxSize": 16,
+            "DesiredCapacity": 12,
+            "TimeZone": "Asia/Seoul"
+        }
+    ]
+}
