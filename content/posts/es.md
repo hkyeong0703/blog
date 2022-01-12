@@ -50,13 +50,13 @@ disableComments: false
 단일 노드로도 클러스터를 구성할 수 있지만, 단일 노드로 클러스터를 구성했을 경우 해당 노드에 장애가 발생한다면 요청 불가 상태가 된다. 
 반면에 다수개의 노드로 클러스터를 구성하게되면, 하나의 노드에 장애가 발생해도 다른 노드에서 요청을 처리 할 수 있기에 안정적으로 운영이 가능하기때문에 단일 노드의 구성은 추천하지 않는다.
 
-<img src="/Users/hkyeong/Downloads/es cluster.png" alt="es cluster" style="zoom: 33%;" />
+<img src="![es cluster](https://hkyeong0703.github.io/posts/images/es7.png)" alt="es cluster" style="zoom: 33%;" />
 
 
 
 - 디스커버리: 노드가 처음 실행할 때 하나의 클러스터로 바인딩하는 과정
 
-![스크린샷 2022-01-12 20.18.07](/Users/hkyeong/Library/Application Support/typora-user-images/스크린샷 2022-01-12 20.18.07.png)
+![스크린샷 2022-01-12 20.18.07](https://hkyeong0703.github.io/posts/images/es6.png)
 
 #### 노드의 종류
 
@@ -69,7 +69,7 @@ disableComments: false
   - 마스터 후보 노드는 마스터 노드로부터 지속적으로 클러스터 운영에 필요한 데이터를 전달 받고, 마스터와 노드와 같은 메타 데이터를 유지한다.
   - 마스터 노드 장애시 마스터 후보 노드 중 한대가 마스터 도의 역할을 수행하기때문에 중단 없이 서비스를 운영 가능하다.
 
-  ![스크린샷 2022-01-12 20.03.52](/Users/hkyeong/Library/Application Support/typora-user-images/스크린샷 2022-01-12 20.03.52.png)
+  ![스크린샷 2022-01-12 20.03.52](https://hkyeong0703.github.io/posts/images/es2.png)
 
   
 
@@ -79,7 +79,7 @@ disableComments: false
 
   - 자신이 요청을 직접 처리하거나 다른 데이터 노드에게 요청을 전달한다.
 
-    ![스크린샷 2022-01-12 20.04.12](/Users/hkyeong/Library/Application Support/typora-user-images/스크린샷 2022-01-12 20.04.12.png)
+    ![스크린샷 2022-01-12 20.04.12](https://hkyeong0703.github.io/posts/images/es3.png)
     
   - 종류
 
@@ -97,7 +97,7 @@ disableComments: false
 
   - Logstash 와 비슷한 기능을 갖고있다.
 
-    ![스크린샷 2022-01-12 20.04.24](/Users/hkyeong/Library/Application Support/typora-user-images/스크린샷 2022-01-12 20.04.24.png)
+    ![스크린샷 2022-01-12 20.04.24](https://hkyeong0703.github.io/posts/images/es4.png)
 
     
 
@@ -107,7 +107,7 @@ disableComments: false
   - 중간다리 역할을 한다.
   - 문서를 저장하지 않는 데이터 노드라고 생각할 수 있다.
 
-![스크린샷 2022-01-12 20.04.38](/Users/hkyeong/Library/Application Support/typora-user-images/스크린샷 2022-01-12 20.04.38.png)
+![스크린샷 2022-01-12 20.04.38](https://hkyeong0703.github.io/posts/images/es5.png)
 
 
 
