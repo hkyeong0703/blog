@@ -6,7 +6,7 @@ tags: [
 	"infra",
 	"devops",
     "Production",
-    "terraform"
+    "Terraform"
 ]
 categories: []
 disableComments: false
@@ -16,8 +16,6 @@ disableComments: false
 
 
 오늘 내용은 [Terrafrom Up&Running(테라폼 업앤러닝)](http://www.yes24.com/Product/Goods/101511312) 책의 6장 내용을 바탕으로 정리하였다.
-
-
 
 ## 인프라 란?
 
@@ -35,10 +33,6 @@ disableComments: false
   - 몇 개의 독립적인 장치가 적절한 영역 내에서 적당히 빠른 속도로 물리적 통신 채널을 통하여 서로가 직접 통신할 수 있도록 지원해주는 데이터 통신 체계
 - 미들웨어 (Middleware)
   -  Web Server, DBMS 등 운영체제와 비지니스를 처리하는 애플리케이션의 중간에서 도움을 주는 소프트웨어
-
-
-
-
 
 
 
