@@ -77,8 +77,8 @@ disableComments: false
 | 로그 <br />(Logs)                       | 로그 순환, 중앙으로 로그 데이터 수집                         | Cloudwatch Logs, ELK, Sumo Logic, Papertrail                 |
 | 백업 및 복구 <br />(Backup and Restore) | DB, 캐시, 기타 데이터를 일정에따라 백업 리전별, 계정별 복제  | RDS, ElastiCache, 복제                                       |
 | 비용 최적화  <br />(Cost Optimization)  | 적절한 인스턴스 유형 선택, 스팟 혹은 예약 인스턴스 사용, 오토스케일링, 사용하지 않는 리소스 정리 | 오토스케일링, 스팟 인스턴스, 예약 인스턴스                   |
-| 문서화 (Document)                       | 코드, 아키텍처, 모든 내용을 문서화 장애 대응 내용 정리       | README, wikis, slack                                         |
-| 테스트 (Tests)                          | 인프라 코드 테스트 자동화 항상 테스트 후에 배포              | 테라테스트, 인스펙(inspec), 서버스펙(serverspec), 키친 테라폼( kichen-terraform) |
+| 문서<br />(Document)                    | 코드, 아키텍처, 모든 내용을 문서화 장애 대응 내용 정리       | README, wikis, slack                                         |
+| 테스트 <br />(Tests)                    | 인프라 코드 테스트 자동화 항상 테스트 후에 배포              | 테라테스트, 인스펙(inspec), 서버스펙(serverspec), 키친 테라폼( kichen-terraform) |
 
 
 
