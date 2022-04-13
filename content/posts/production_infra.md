@@ -5,7 +5,8 @@ description: ""
 tags: [
 	"infra",
 	"devops",
-    "Production"
+    "Production",
+    "terraform"
 ]
 categories: []
 disableComments: false
